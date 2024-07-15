@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CAExample</string>
+    <string name="naver_client_id"></string>
+    <string name="naver_client_secret"></string>
+
+    <string name="button_ok">확인</string>
+    <string name="button_cancel">취소</string>
+    <string name="button_close">닫기</string>
+    <string name="error_network">네트워크 상태가 원활하지 않습니다.\n인터넷 연결 상태를 확인 후 다시 시도해 주세요.\n[CODE : %s]</string>
+    <string name="snackbar_finish_app">\'뒤로\' 버튼을 한번 더 누르면 앱이 종료됩니다.</string>
+    <string name="button_login_naver">네이버 로그인</string>
+</resources>

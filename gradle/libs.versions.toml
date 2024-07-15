@@ -1,0 +1,94 @@
+[versions]
+gradle-plugin = "8.3.2"
+kotlin = "1.9.23"
+
+hilt-android = "2.51.1"
+ksp = "1.9.23-1.0.20"
+kapt = "1.9.23"
+
+ktx = "1.12.0"
+lifecycle-livedata-ktx = "2.7.0"
+appcompat = "1.6.1"
+constraintlayout = "2.1.4"
+recyclerview = "1.3.2"
+navigation-fragment-ktx = "2.7.7"
+databinding-common = "8.3.2"
+databinding-compiler = "3.2.0-alpha11"
+core-splashscreen = "1.0.1"
+room-runtime = "2.6.1"
+security-crypto-ktx = "1.1.0-alpha06"
+material = "1.11.0"
+
+junit = "4.13.2"
+androidx-junit = "1.1.5"
+espresso-core = "3.5.1"
+
+naver-oauth = "5.9.1"
+
+retrofit = "2.11.0"
+okhttp = "4.12.0"
+okhttp-logging = "5.0.0-alpha.12"
+
+coil = "2.6.0"
+lottie = "6.4.0"
+
+colorpickerview = "2.3.0"
+
+[libraries]
+androidx-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "ktx"}
+androidx-lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycle-livedata-ktx" }
+androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle-livedata-ktx" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat"}
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
+androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigation-fragment-ktx" }
+androidx-databinding-common = { group = "androidx.databinding", name = "databinding-common", version.ref = "databinding-common" }
+androidx-databinding-compiler = { group = "androidx.databinding", name = "compiler", version.ref = "databinding-compiler" }
+androidx-core-splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "core-splashscreen" }
+androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room-runtime" }
+androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room-runtime" }
+androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room-runtime" }
+androidx-security-crypto-ktx = { group = "androidx.security", name = "security-crypto-ktx", version.ref = "security-crypto-ktx" }
+
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt-android" }
+hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt-android" }
+
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-junit" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+
+
+naver-oauth = { group = "com.navercorp.nid", name = "oauth", version.ref = "naver-oauth" }
+
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+converter-scalars = { group = "com.squareup.retrofit2", name = "converter-scalars", version.ref = "retrofit" }
+okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp-logging" }
+
+coil = { group = "io.coil-kt", name = "coil", version.ref = "coil" }
+coil-gif = { group = "io.coil-kt", name = "coil-gif", version.ref = "coil" }
+lottie = { group = "com.airbnb.android", name = "lottie", version.ref = "lottie" }
+
+colorpickerview = { group = "com.github.skydoves", name = "colorpickerview", version.ref = "colorpickerview" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "gradle-plugin"}
+kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin"}
+hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hilt-android"}
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp"}
+kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kapt"}
+
+[bundles]
+androidx-ui = ["androidx-appcompat", "androidx-constraintlayout", "androidx-recyclerview",
+    "androidx-navigation-fragment-ktx", "androidx-databinding-common", "androidx-core-splashscreen"]
+androidx-lifecycle = ["androidx-lifecycle-livedata-ktx", "androidx-lifecycle-viewmodel-ktx"]
+test = ["junit"]
+android-test = ["androidx-junit", "androidx-espresso-core"]
+sns-login = ["naver-oauth"]
+network-app = ["converter-gson", "okhttp"]
+network-data = ["retrofit", "converter-gson", "converter-scalars", "okhttp-logging"]
+room = ["androidx-room-ktx", "androidx-room-runtime"]
+images = ["coil", "coil-gif", "lottie"]
